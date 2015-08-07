@@ -12,3 +12,18 @@ This project achieves the mechanism of button tap on nodes in Scene. In addition
                [super touchesMoved:touches withEvent:event];
               // Your code here.
          }
+   - To get tap action, override the following method in your Scene file.
+   
+         - (void)touchUpInsideOnNodeName:(NSString *)nodeName atPoint:(CGPoint)touchPoint {
+            // Your code here.
+         }
+   - To get to know the start of touch on a particular body, override the following method in your Scene file.
+   
+         - (void)touchBeginOnNodeName:(NSString *)nodeName {
+            // Your code here.
+         }
+   - To get to know the end of touch on a particular body, override the following method in your Scene file.
+   
+         - (void)touchEndedOnNodeName:(NSString *)nodeName {
+            // Your code here.
+         }
